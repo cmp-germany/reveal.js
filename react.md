@@ -72,18 +72,6 @@ Go to [CodePen](http://codepen.io/k-wittmann/pen/yVzyGv)
 
 
 
-## Concepts
-
-
-### Virtual DOM
-
-
-### Props
-
-
-### State
-
-
 ## How to get Started
 
 
@@ -111,6 +99,6 @@ ReactDOM.render(
 > <!-- .element: class="fragment" -->
 > # Hello world!
 
-
+<!-- -->
 
 > To be continued...
