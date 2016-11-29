@@ -96,10 +96,12 @@ ReactDOM.render(
 </script>
 ```
 
-> <!-- .element: class="fragment" -->
+> <!-- .element: class="fragment" data-fragment-index="1" -->
 > # Hello world!
 
-<!-- -->
+- <!-- .element: target="_blank" class="fragment" data-fragment-index="2" --> [HelloWorld HTML](https://github.com/cmp-germany/reveal.js/blob/master/react/helloWorld.html)
+- <!-- .element: target="_blank" class="fragment" data-fragment-index="2" --> [HelloWorld JSX](https://github.com/cmp-germany/reveal.js/blob/master/react/helloWorld.jsx)
+
 
 
 
