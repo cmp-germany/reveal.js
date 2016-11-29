@@ -61,14 +61,14 @@ React.createElement(
 
 ## How Do I write react Code?
 
-Go to [CodePen](http://codepen.io/k-wittmann/pen/yVzyGv)
+Go to [CodePen](http://codepen.io/k-wittmann/pen/ObxwdG/?editors=0010) <!-- .element: target="_blank" -->
 
-01. Introduction to JSX
-02. Introduction to Own Components
-03. Introduction to Props
-04. Props Objects
-05. Introduction to Children
-06. Array as Children
+01. [Introduction to JSX](https://github.com/cmp-germany/reveal.js/blob/master/react/example01.jsx) <!-- .element: target="_blank" -->
+02. [Introduction to Own Components](https://github.com/cmp-germany/reveal.js/blob/master/react/example02.jsx) <!-- .element: target="_blank" -->
+03. [Introduction to Props](https://github.com/cmp-germany/reveal.js/blob/master/react/example03.jsx) <!-- .element: target="_blank" -->
+04. [Props Objects](https://github.com/cmp-germany/reveal.js/blob/master/react/example04.jsx) <!-- .element: target="_blank" -->
+05. [Introduction to Children](https://github.com/cmp-germany/reveal.js/blob/master/react/example05.jsx) <!-- .element: target="_blank" -->
+06. [Array as Children](https://github.com/cmp-germany/reveal.js/blob/master/react/example06.jsx) <!-- .element: target="_blank" -->
 
 
 
@@ -100,5 +100,7 @@ ReactDOM.render(
 > # Hello world!
 
 <!-- -->
+
+
 
 > To be continued...
