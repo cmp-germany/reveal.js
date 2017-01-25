@@ -37,7 +37,7 @@
 
 - What does this mean?
 
-![some visuals](http://placehold.it/350x180)
+<div class="canvas"><canvas id="gitGraph"></canvas></div>
 
 
 ### Commit

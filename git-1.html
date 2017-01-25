@@ -12,6 +12,10 @@
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
 
+		<!-- GitGraph -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gitgraph.js/1.8.3/gitgraph.min.css" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gitgraph.js/1.8.3/gitgraph.min.js"></script>
+
 		<!-- Printing and PDF exports -->
 		<script>
 			var link = document.createElement( 'link' );
@@ -28,7 +32,9 @@
           data-separator="^\n\n\n"
           data-separator-vertical="^\n\n"
           data-separator-notes="^Note:"
-          data-charset="utf-8">
+          data-charset="utf-8"
+					data-state="gitgraph"
+				>
 				</section>
 			</div>
 		</div>
@@ -50,5 +56,24 @@
 				]
 			});
 		</script>
+		<script>
+			Reveal.addEventListener( 'gitgraph', function() {
+				console.log("OK, i got the state gitgraph");
+				var gitgraph = new GitGraph({
+					template: "metro",
+					orientation: "horizontal",
+					mode: "compact"
+				});
+
+				var master = gitgraph.branch("master");
+
+				gitgraph.commit().commit().commit();         // 3 commits upon HEAD
+				var develop = gitgraph.branch("develop");    // New branch from HEAD
+				develop.commit().commit().commit();
+				master.commit();
+
+			}, false );
+		</script>
+
 	</body>
 </html>
