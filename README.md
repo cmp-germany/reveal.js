@@ -14,3 +14,4 @@
 # Git Lecture #1
 
 - [Presentation](https://cmp-germany.github.io/reveal.js/git-1.html)
+- [Handout](https://github.com/cmp-germany/reveal.js/blob/master/git-1.md)
