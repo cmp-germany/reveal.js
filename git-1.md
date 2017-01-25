@@ -17,17 +17,14 @@
 
 ### TFS is **Centralized**
 
-- What does this mean?
-
-![some visuals](http://placehold.it/350x180)
+- `-` Bad Thing
+- `+` Good Thing
 
 
 ### Git is **Distributed**
 
-- What does this mean?
-
-![some visuals](http://placehold.it/350x180)
-
+- `-` Bad Thing
+- `+` Good Thing
 
 
 ## The Concepts of Git
