@@ -97,6 +97,33 @@
 				master.commit();
 				master.commit();
 			}, false );
+
+			Reveal.addEventListener( 'branch', function() {
+				console.log("OK, COMMIT!!!");
+				var gitgraph = new GitGraph({
+					template: "metro",
+					orientation: "horizontal",
+					mode: "compact",
+					elementId: "branch-1"
+				});
+
+				var master = gitgraph.branch("master");
+
+				master.commit();
+				master.commit();
+				var branch1 = master.branch();
+				branch1.commit();
+				master.commit();
+				branch1.commit();
+				master.commit();
+				var branch2 = master.branch();
+				branch2.commit();
+				master.commit();
+				branch2.commit();
+				master.commit();
+			}, false );
+
+
 		</script>
 
 	</body>

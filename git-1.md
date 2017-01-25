@@ -56,7 +56,15 @@ In easy words: Takes the whole repository...
 <canvas id="commit-1"></canvas>
 
 
-### Branch & Merge
+<!-- .element: data-state="branch" -->
+### Branch
+
+> "A branch represents an independent line of development."
+
+<canvas id="branch-1"></canvas>
+
+
+### Merge
 
 - What does this mean?
 
