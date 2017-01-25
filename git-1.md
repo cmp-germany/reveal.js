@@ -70,19 +70,20 @@ In easy words: Takes the whole repository...
 <canvas id="merge-1"></canvas>
 
 
+<!-- .element: data-state="pull" -->
 ### Pull
 
-- What does this mean?
+> "Pull is an easy way to synchronize your local repository with upstream changes."
 
-![some visuals](http://placehold.it/350x180)
+![git-pull](git-1/gfx/git-pull.jpg)
 
 
 ### Push
 
-- What does this mean?
+> "Pushing is how you transfer commits from your local repository to a remote repo."
 
-![some visuals](http://placehold.it/350x180)
+![git-push](git-1/gfx/git-push.jpg)
 
 
 
-## How to use Git in Visual Studio
+## How to use Git in **Visual Studio**
