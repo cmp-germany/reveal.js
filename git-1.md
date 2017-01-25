@@ -35,14 +35,20 @@
 
 ### Clone
 
-- What does this mean?
+> "Clones a repository into a newly created directory, creates remote-tracking branches for each branch in the cloned repository, and creates and checks out an initial branch that is forked from the cloned repository’s currently active branch."
 
-<div class="canvas"><canvas id="gitGraph"></canvas></div>
+
+<!-- .element: data-state="clone" -->
+In easy words: Takes the whole repository...
+<canvas id="clone-1"></canvas>
+
+<div>...and copies it to your location.
+<canvas id="clone-2"></canvas></div><!-- .element: class="fragment" -->
 
 
 ### Commit
 
-- What does this mean?
+> "You commit when you have reached a codebase state you want to remember."
 
 ![some visuals](http://placehold.it/350x180)
 

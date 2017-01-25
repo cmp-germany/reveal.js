@@ -33,7 +33,6 @@
           data-separator-vertical="^\n\n"
           data-separator-notes="^Note:"
           data-charset="utf-8"
-					data-state="gitgraph"
 				>
 				</section>
 			</div>
@@ -57,20 +56,32 @@
 			});
 		</script>
 		<script>
-			Reveal.addEventListener( 'gitgraph', function() {
-				console.log("OK, i got the state gitgraph");
-				var gitgraph = new GitGraph({
-					template: "metro",
-					orientation: "horizontal",
-					mode: "compact"
-				});
+			Reveal.addEventListener( 'clone', function() {
+				console.log("OK, i got the state clone");
+				function createCloneGitGraph(elementId){
+					var gitgraph = new GitGraph({
+						template: "metro",
+						orientation: "horizontal",
+						mode: "compact",
+						elementId: elementId
+					});
 
-				var master = gitgraph.branch("master");
+					var master = gitgraph.branch("master");
 
-				gitgraph.commit().commit().commit();         // 3 commits upon HEAD
-				var develop = gitgraph.branch("develop");    // New branch from HEAD
-				develop.commit().commit().commit();
-				master.commit();
+					gitgraph.commit().commit().commit();         // 3 commits upon HEAD
+					var develop = gitgraph.branch("develop");    // New branch from HEAD
+					develop.commit();
+					var feature1 = master.branch("feature1");
+					feature1.commit();
+					develop.commit();
+					feature1.commit();
+					develop.merge(master);
+					master.commit();
+
+				}
+				createCloneGitGraph('clone-1');
+				createCloneGitGraph('clone-2');
+
 
 			}, false );
 		</script>
