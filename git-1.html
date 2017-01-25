@@ -57,7 +57,6 @@
 		</script>
 		<script>
 			Reveal.addEventListener( 'clone', function() {
-				console.log("OK, i got the state clone");
 				function createCloneGitGraph(elementId){
 					var gitgraph = new GitGraph({
 						template: "metro",
@@ -81,8 +80,22 @@
 				}
 				createCloneGitGraph('clone-1');
 				createCloneGitGraph('clone-2');
+			}, false );
 
+			Reveal.addEventListener( 'commit', function() {
+				console.log("OK, COMMIT!!!");
+				var gitgraph = new GitGraph({
+					template: "metro",
+					orientation: "horizontal",
+					mode: "compact",
+					elementId: "commit-1"
+				});
 
+				var master = gitgraph.branch("master");
+
+				master.commit();
+				master.commit();
+				master.commit();
 			}, false );
 		</script>
 

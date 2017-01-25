@@ -46,11 +46,14 @@ In easy words: Takes the whole repository...
 <canvas id="clone-2"></canvas></div><!-- .element: class="fragment" -->
 
 
+<!-- .element: data-state="commit" -->
 ### Commit
 
 > "You commit when you have reached a codebase state you want to remember."
 
-![some visuals](http://placehold.it/350x180)
+![Commit Examples from Github](git-1/gfx/commit-examples.png)
+
+<canvas id="commit-1"></canvas>
 
 
 ### Branch & Merge
