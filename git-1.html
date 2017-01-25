@@ -123,6 +123,30 @@
 				master.commit();
 			}, false );
 
+			Reveal.addEventListener( 'merge', function() {
+				console.log("OK, COMMIT!!!");
+				var gitgraph = new GitGraph({
+					template: "metro",
+					orientation: "horizontal",
+					mode: "compact",
+					elementId: "merge-1"
+				});
+
+				var master = gitgraph.branch("master");
+				var branch2 = master.branch();
+				branch2.commit();
+				master.commit();
+				branch2.commit();
+				master.commit();
+				branch2.commit();
+				master.commit();
+				branch2.commit();
+				master.commit();
+				branch2.merge(master);
+
+
+			}, false );
+
 
 		</script>
 

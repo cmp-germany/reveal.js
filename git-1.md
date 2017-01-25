@@ -27,6 +27,7 @@
 - `+` Good Thing
 
 
+
 ## The Concepts of Git
 
 
@@ -61,11 +62,12 @@ In easy words: Takes the whole repository...
 <canvas id="branch-1"></canvas>
 
 
+<!-- .element: data-state="merge" -->
 ### Merge
 
-- What does this mean?
+> "Merging is Git's way of putting a forked history back together again."
 
-![some visuals](http://placehold.it/350x180)
+<canvas id="merge-1"></canvas>
 
 
 ### Pull
