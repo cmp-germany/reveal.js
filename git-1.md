@@ -17,14 +17,19 @@
 
 ### TFS is **Centralized**
 
-- `-` Bad Thing
-- `+` Good Thing
+- `-` Single Point of Failure
+- `-` Remote Commits
+- `-` Save the whole Code-Base
+- `+` File Locks
 
 
 ### Git is **Distributed**
 
-- `-` Bad Thing
-- `+` Good Thing
+- `-` No File Locks
+- `-` Learning Curve(but..)
+- `+` Save Only Differences
+- `+` Makes Developer Braver
+- `+` No Server Connectivity required
 
 
 
