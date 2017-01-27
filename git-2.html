@@ -28,7 +28,7 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section data-markdown="git-1.md"
+				<section data-markdown="git-2.md"
           data-separator="^\n\n\n"
           data-separator-vertical="^\n\n"
           data-separator-notes="^Note:"
@@ -56,6 +56,7 @@
 			});
 		</script>
 		<script>
+			// Example for a gitgraph
 			Reveal.addEventListener( 'clone', function() {
 				function createCloneGitGraph(elementId){
 					var gitgraph = new GitGraph({
@@ -76,78 +77,10 @@
 					feature1.commit();
 					develop.merge(master);
 					master.commit();
-
 				}
 				createCloneGitGraph('clone-1');
 				createCloneGitGraph('clone-2');
 			}, false );
-
-			Reveal.addEventListener( 'commit', function() {
-				console.log("OK, COMMIT!!!");
-				var gitgraph = new GitGraph({
-					template: "metro",
-					orientation: "horizontal",
-					mode: "compact",
-					elementId: "commit-1"
-				});
-
-				var master = gitgraph.branch("master");
-
-				master.commit();
-				master.commit();
-				master.commit();
-			}, false );
-
-			Reveal.addEventListener( 'branch', function() {
-				console.log("OK, COMMIT!!!");
-				var gitgraph = new GitGraph({
-					template: "metro",
-					orientation: "horizontal",
-					mode: "compact",
-					elementId: "branch-1"
-				});
-
-				var master = gitgraph.branch("master");
-
-				master.commit();
-				master.commit();
-				var branch1 = master.branch();
-				branch1.commit();
-				master.commit();
-				branch1.commit();
-				master.commit();
-				var branch2 = master.branch();
-				branch2.commit();
-				master.commit();
-				branch2.commit();
-				master.commit();
-			}, false );
-
-			Reveal.addEventListener( 'merge', function() {
-				console.log("OK, COMMIT!!!");
-				var gitgraph = new GitGraph({
-					template: "metro",
-					orientation: "horizontal",
-					mode: "compact",
-					elementId: "merge-1"
-				});
-
-				var master = gitgraph.branch("master");
-				var branch2 = master.branch();
-				branch2.commit();
-				master.commit();
-				branch2.commit();
-				master.commit();
-				branch2.commit();
-				master.commit();
-				branch2.commit();
-				master.commit();
-				branch2.merge(master);
-
-
-			}, false );
-
-
 		</script>
 
 	</body>
